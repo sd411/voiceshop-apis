@@ -12,6 +12,10 @@ model = AutoModelForSequenceClassification.from_pretrained("facebook/bart-large-
 zsc = pipeline(task='zero-shot-classification', tokenizer=tokenizer, model=model)
 
 
+@app.route("/")
+def hello():
+    return "Helloooooooo playa, ya did it!!!!!!!!!"
+
 @app.route("/pos_neg",methods=["POST"])
 def get_pos_neg_score():
     data = request.json
