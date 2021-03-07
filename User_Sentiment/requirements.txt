@@ -3,4 +3,4 @@ numpy
 transformers
 Flask
 gunicorn
-pytorch
+torch
