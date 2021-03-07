@@ -1,2 +1,2 @@
 heroku ps:scale web=1
-web gunicorn app:User_Sentiment --preload 
+web gunicorn User_Sentiment:User_Sentiment --preload 
